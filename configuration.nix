@@ -99,6 +99,14 @@
   # UI for the system 
   services.xserver.enable = true;
 
+  services.xserver.displayManager.sddm = {
+    enable = true;
+    wayland.enable = true;
+     # Configuración de SDDM
+    theme = "sugar-candy"; # Cambia esto por el tema que prefieras
+  };
+
+  
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
