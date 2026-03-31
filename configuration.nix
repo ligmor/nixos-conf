@@ -97,7 +97,7 @@
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
   # UI for the system 
-  services.xserver.enable = true;
+  services.xserver.enable = false;
 
   services.xserver.displayManager.sddm = {
     enable = true;
