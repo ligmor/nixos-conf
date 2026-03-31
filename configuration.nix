@@ -119,10 +119,10 @@
   google-chrome
 
   # Hyprland dependencies
-  ags    # AGS (Para tus sidebars con JS/API)
+  ags                 # AGS (Para tus sidebars con JS/API)
   waybar              # Barra
   swww                # Fondos de pantalla
-  rofi-wayland        # Lanzador
+  rofi                # Lanzador
   slurp grim          # Capturas de pantalla
   wl-clipboard        # Copy and paste in Waylan
 
