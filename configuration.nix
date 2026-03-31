@@ -119,7 +119,7 @@
   google-chrome
 
   # Hyprland dependencies
-  aylurs-gtk-shell    # AGS (Para tus sidebars con JS/API)
+  ags    # AGS (Para tus sidebars con JS/API)
   waybar              # Barra
   swww                # Fondos de pantalla
   rofi-wayland        # Lanzador
