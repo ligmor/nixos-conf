@@ -15,7 +15,6 @@
 
   imports = [
     ./programs/git.nix
-    ./programs/steam.nix
     ./packages.nix
     ./programs/zsh.nix
   ];
