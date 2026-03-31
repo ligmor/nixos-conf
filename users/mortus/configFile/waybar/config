@@ -1,0 +1,64 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 34,
+    "spacing": 4,
+    "mode":"dock",
+    "exclusive": true, // Esto hace que las ventanas NO se encimen por defecto
+    "modules-left": ["hyprland/workspaces", "hyprland/mode"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": ["network", "pulseaudio", "battery", "clock", "tray"],
+
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "on-click": "activate",
+        "all-outputs": true,
+        "active-only": false,
+        "persistent-workspaces": {
+            "1": "I",
+            "2": "II",
+            "3": "III",
+            "4": "IV",
+            "5": "V"
+        }
+    },
+
+    "hyprland/window": {
+        "format": "󰖲 {title}",
+        "max-length": 50,
+        "separate-outputs": true
+    },
+
+    "network": {
+        "format-wifi": "  {signalStrength}%",
+        "format-ethernet": "󰈀 ETH",
+        "format-disconnected": "󰖪 OFF",
+        "tooltip-format": "{essid}",
+        "on-click": "nm-connection-editor"
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "󰝟 MUTE",
+        "format-icons": {
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+
+    "battery": {
+        "states": { "warning": 30, "critical": 15 },
+        "format": "{icon} {capacity}%",
+        "format-icons": ["", "", "", "", ""]
+    },
+
+    "clock": {
+        "format": "  {:%H:%M  󰃭  %d/%m}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>"
+    },
+
+    "tray": {
+        "icon-size": 18,
+        "spacing": 10
+    }
+}

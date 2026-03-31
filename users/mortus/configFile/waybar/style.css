@@ -1,0 +1,95 @@
+/* Fuente FiraCode que usabas en Awesome */
+* {
+  font-family: "FiraCode Nerd Font", "JetBrainsMono Nerd Font", "Roboto";
+  font-size: 13px;
+  font-weight: bold;
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+}
+
+window#waybar {
+  background-color: rgba(22, 22, 22, 0.95);
+  /* Fondo Carbonfox */
+  border-bottom: 2px solid #78a9ff;
+  /* Línea azul de acento */
+  color: #f2f4f8;
+}
+
+/* --- WORKSPACES (Los Tags) --- */
+#workspaces {
+  background-color: #232323;
+  margin: 4px 5px;
+  padding: 0 5px;
+  border-radius: 10px;
+}
+
+#workspaces button {
+  padding: 0 10px;
+  color: #7b7c7e;
+  /* Gris apagado para inactivos */
+  transition: all 0.3s ease;
+}
+
+#workspaces button.active {
+  color: #78a9ff;
+  /* El azul brillante de Carbonfox */
+  border-bottom: 2px solid #78a9ff;
+}
+
+#workspaces button.urgent {
+  color: #ee5396;
+  /* Rojo para alertas */
+}
+
+#workspaces button:hover {
+  background-color: rgba(120, 169, 255, 0.1);
+  color: #78a9ff;
+}
+
+/* --- WIDGETS DERECHA --- */
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#tray {
+  padding: 0 12px;
+  margin: 4px 3px;
+  background-color: #232323;
+  border-radius: 8px;
+  border: 1px solid #393939;
+}
+
+#clock {
+  color: #be95ff;
+}
+
+/* Magenta */
+#network {
+  color: #3ddbd9;
+}
+
+/* Cyan */
+#pulseaudio {
+  color: #78a9ff;
+}
+
+/* Blue */
+#battery {
+  color: #42be65;
+}
+
+/* Green */
+#battery.warning {
+  color: #ffab91;
+}
+
+#battery.critical {
+  color: #ee5396;
+}
+
+/* El título de la ventana en el centro */
+#window {
+  color: #f2f4f8;
+  background: transparent;
+}

@@ -3,13 +3,14 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./users/mortus/programs/steam.nix
+      inputs.silentSDDM.nixosModules.default
     ];
 
 
@@ -102,10 +103,12 @@
   services.xserver.displayManager.sddm = {
     enable = true;
     wayland.enable = true;
-     # Configuración de SDDM
-    theme = "sugar-candy"; # Cambia esto por el tema que prefieras
   };
 
+    programs.silentSDDM = {
+        enable = true;
+        theme = "rei";
+   };
   
   programs.hyprland = {
     enable = true;

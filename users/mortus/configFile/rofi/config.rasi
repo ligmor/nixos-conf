@@ -1,0 +1,14 @@
+* {
+    bg: #161616;
+    blue: #78a9ff;
+    fg: #f2f4f8;
+}
+window {
+    border: 2px;
+    border-color: @blue;
+    background-color: @bg;
+}
+
+element {
+    color: white;
+  }
