@@ -16,7 +16,6 @@ home.packages = [
     pkgs.python314
     pkgs.poetry
     pkgs.gcc
-    pkgs.vscode
     pkgs.docker
 
 # LSP neovim
