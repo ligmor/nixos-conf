@@ -14,8 +14,6 @@
     ];
 
 
-  hardware.graphics.enable = true;
-
   # loading the plymouth theme for the boot screen
   boot.plymouth = {
     enable = true;
@@ -100,12 +98,12 @@
   # UI for the system 
   services.xserver.enable = false;
 
-  services.xserver.displayManager.sddm = {
+  services.displayManager.sddm = {
     enable = true;
     wayland.enable = true;
-  };
-
-    programs.silentSDDM = {
+  }
+  
+  programs.silentSDDM = {
         enable = true;
         theme = "rei";
    };
@@ -119,7 +117,6 @@
 
   services.printing.enable = true;
 
-  
   # List packages installed in system profile. To search, run:
   environment.systemPackages = with pkgs; [
   
@@ -132,7 +129,7 @@
   # Hyprland dependencies
   ags                 # AGS (Para tus sidebars con JS/API)
   waybar              # Barra
-  swww                # Fondos de pantalla
+  awww                # Fondos de pantalla
   rofi                # Lanzador
   slurp grim          # Capturas de pantalla
   wl-clipboard        # Copy and paste in Waylan

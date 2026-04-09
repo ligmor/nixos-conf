@@ -21,9 +21,6 @@ home.packages = [
 
 # LSP neovim
     pkgs.pyright   # LSP para Python
-    pkgs.nodePackages."@astrojs/language-server"  # LSP para Astro
-    pkgs.nodePackages.typescript    # TypeScript
-    pkgs.nodePackages.typescript-language-server
     pkgs.lua-language-server
 
 # NeoVim
